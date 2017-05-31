@@ -1,0 +1,1038 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis projectname="" version="2.18.7">
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <layer-tree-group expanded="1" checked="Qt::Checked" name="">
+    <customproperties/>
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ra_nodi_totali20170525105238638" source="dbname='webgis' host=localhost port=5432 user='postgres' sslmode=disable key='gid' srid=32632 type=Point table=&quot;public&quot;.&quot;ra_nodi_totali&quot; (geom) sql=" name="ra_nodi_totali">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="ra_tratte_totali20170525104501803" source="dbname='webgis' host=localhost port=5432 user='postgres' sslmode=disable key='gid' srid=32632 type=MultiLineString table=&quot;public&quot;.&quot;ra_tratte_totali&quot; (geom) sql=" name="ra_tratte_totali">
+      <customproperties/>
+    </layer-tree-layer>
+  </layer-tree-group>
+  <relations/>
+  <mapcanvas>
+    <units>meters</units>
+    <extent>
+      <xmin>746541.51795833045616746</xmin>
+      <ymin>4893202.74106989987194538</ymin>
+      <xmax>747786.14522426063194871</xmax>
+      <ymax>4893907.37870417721569538</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <projections>1</projections>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>3116</srsid>
+        <srid>32632</srid>
+        <authid>EPSG:32632</authid>
+        <description>WGS 84 / UTM zone 32N</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <layer_coordinate_transform_info>
+      <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="ra_tratte_totali20170525104501803"/>
+      <layer_coordinate_transform destAuthId="EPSG:32632" srcAuthId="EPSG:32632" srcDatumTransform="-1" destDatumTransform="-1" layerid="ra_nodi_totali20170525105238638"/>
+    </layer_coordinate_transform_info>
+  </mapcanvas>
+  <layer-tree-canvas>
+    <custom-order enabled="0">
+      <item>ra_tratte_totali20170525104501803</item>
+      <item>ra_nodi_totali20170525105238638</item>
+    </custom-order>
+  </layer-tree-canvas>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ra_nodi_totali" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="ra_nodi_totali20170525105238638" visible="1"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="ra_tratte_totali" showFeatureCount="0">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile isInOverview="0" layerid="ra_tratte_totali20170525104501803" visible="1"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <projectlayers>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>736235.3125</xmin>
+        <ymin>4850452</ymin>
+        <xmax>804571.6875</xmax>
+        <ymax>4910076.5</ymax>
+      </extent>
+      <id>ra_nodi_totali20170525105238638</id>
+      <datasource>dbname='webgis' host=localhost port=5432 user='postgres' password='70labgis' sslmode=disable key='gid' srid=32632 type=Point table="public"."ra_nodi_totali" (geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ra_nodi_totali</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3116</srsid>
+          <srid>32632</srid>
+          <authid>EPSG:32632</authid>
+          <description>WGS 84 / UTM zone 32N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="gid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="istat_cod">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="comune">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="codvia">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nomevia">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ncivsub">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="codprop">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueMap" name="dsstato">
+          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0">
+            <value key="DEMOLITO" value="DEMOLITO"/>
+            <value key="DISMESSA" value="DISMESSA"/>
+            <value key="FUORI SERVIZIO" value="FUORI SERVIZIO"/>
+            <value key="IN SERVIZIO" value="IN SERVIZIO"/>
+            <value key="PROGETTO" value="PROGETTO"/>
+            <value key="RESTITUITO" value="RESTITUITO"/>
+            <value key="[null]" value="null"/>
+          </widgetv2config>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="codimp">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="capacita">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ato">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="accuratez">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nome">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lastupdate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="immagine1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="immagine2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sotagg">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="categoria">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="distr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tipologia">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="localita">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sublotto2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="note">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueMap" name="id_sublotto">
+          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0">
+            <value key="C01 - SDF Cesena" value="75"/>
+            <value key="C02 - SDF Bagno di Romagna" value="76"/>
+            <value key="C03 - SDF Sarsina" value="77"/>
+            <value key="C04 - SDF Mercato Saraceno" value="78"/>
+            <value key="C05 - SDF Genga" value="79"/>
+            <value key="C06 - SDF Alberazzo" value="80"/>
+            <value key="C07 - SDF Acquapartita - Bagno di Romagna" value="81"/>
+            <value key="C08 - SDF Ca' di Bendassa - Bagno di Romagna" value="82"/>
+            <value key="C09 - SDF" value="83"/>
+            <value key="C10 - SDF Fosso dei Lupi - Bagno di Romagna" value="84"/>
+            <value key="C11 - SDF Giampareto - S. Paolo - Bagno di Romagna" value="33"/>
+            <value key="C12 - SDF Lombardesca - Bagno di Romagna" value="34"/>
+            <value key="C13 - SDF Montegranelli - Bagno di Romagna" value="35"/>
+            <value key="C14 - SDF Monteguidi - Bagno di Romagna" value="36"/>
+            <value key="C15 - SDF Poggio La Lastra - Bagno di Romagna" value="37"/>
+            <value key="C16 - SDF Ridracoli - Bagno di Romagna" value="38"/>
+            <value key="C17 - SDF Saiaccio - Bagno di Romagna" value="39"/>
+            <value key="C18 - SDF Scopeto - Bagno di Romagna" value="40"/>
+            <value key="C19 - SDF Bonsignano - Sarsina" value="41"/>
+            <value key="C20 - SDF Castel d'Alfero - Sarsina" value="42"/>
+            <value key="C21 - SDF Massa - Sarsina" value="43"/>
+            <value key="C22 - SDF Semme - Sarsina" value="44"/>
+            <value key="C23 - SDF Ca' di Alessio - Sarsina" value="45"/>
+            <value key="C24 - SDF Lucignano - Sarsina" value="46"/>
+            <value key="C25 - SDF Balze - Cloratore Tevere - Verghereto" value="47"/>
+            <value key="C26 - SDF Baroni - Cloratore Moia - Fontefredda" value="48"/>
+            <value key="C27 - SDF Capanne - Verghereto" value="49"/>
+            <value key="C28 - SDF Chiuso Nuovo - Verghereto" value="50"/>
+            <value key="C29 - SDF Donicilio - Verghereto" value="51"/>
+            <value key="C30 - SDF Montione - Verghereto" value="52"/>
+            <value key="C31 - SDF Osseto - Verghereto" value="53"/>
+            <value key="C32 - SDF Strada - Verghereto" value="54"/>
+            <value key="C33 - SDF Straniera - Verghereto" value="55"/>
+            <value key="C34 - SDF Tavolicci - Verghereto" value="56"/>
+            <value key="C35 - SDF Viezza - Verghereto" value="57"/>
+            <value key="C36 - SDF Ville S. Alessio - Verghereto" value="58"/>
+            <value key="F01 - SDF Montaspro" value="66"/>
+            <value key="F02 - SDF Pandolfa" value="67"/>
+            <value key="F03 - SDF Romiti" value="68"/>
+            <value key="F04 - SDF Stadio" value="69"/>
+            <value key="F05 - SDF Villa Selva" value="70"/>
+            <value key="F06 - SDF Santa Sofia Cabelli" value="71"/>
+            <value key="F07 - SDF Premilcuore" value="72"/>
+            <value key="F08 - SDF Portico - S. Benedetto" value="73"/>
+            <value key="F09 - SDF Rocca San Casciano" value="74"/>
+            <value key="F10 - SDF Castagnolo Fondi - Civitella di Romagna" value="59"/>
+            <value key="F11 - SDF Civorio - Civitella di Romagna" value="60"/>
+            <value key="F12 - SDF Collina - Civitella di Romagna" value="61"/>
+            <value key="F13 - SDF Pozzo Cusercoli - Civitella di Romagna" value="62"/>
+            <value key="F14 - SDF Fiumicello - Premilcuore" value="63"/>
+            <value key="F15 - SDF Valbonella - Santa Sofia" value="64"/>
+            <value key="F16 - SDF Vallicelle - Santa Sofia" value="65"/>
+            <value key="F17 - SDF Camposonaldo - Santa Sofia" value="23"/>
+            <value key="F18 - SDF Biserno - Santa Sofia" value="24"/>
+            <value key="F19 - SDF Berleta - Santa Sofia" value="25"/>
+            <value key="F20 - SDF Campatello - Tredozio Modigliana" value="26"/>
+            <value key="F21 - SDF Casa Massaia - Tredozio Modigliana" value="27"/>
+            <value key="F22 - SDF Marucca - Tredozio Modigliana" value="28"/>
+            <value key="F23 - SDF Monte Faggeto - Tredozio Modigliana" value="29"/>
+            <value key="F24 - SDF Prato - Tredozio Modigliana" value="30"/>
+            <value key="F25 - SDF Forlimpopoli Potabilizzatore" value="32"/>
+            <value key="N00 - SDF Anello Nord" value="100"/>
+            <value key="N01 - SDF Campana" value="99"/>
+            <value key="N02 - SDF Polveriera" value="101"/>
+            <value key="N03 - SDF Sarzana" value="102"/>
+            <value key="N04 - SDF Raggera" value="103"/>
+            <value key="N05 - SDF Torre Pedrera" value="104"/>
+            <value key="N06 - SDF Bellaria" value="105"/>
+            <value key="N07 - SDF RN rete e S. Giustina" value="96"/>
+            <value key="N08 - SDF Santarcangelo" value="97"/>
+            <value key="N09 - SDF Verucchio" value="98"/>
+            <value key="N10 - SDF S.M. Piano" value="106"/>
+            <value key="N11 - SDF Benevento" value="107"/>
+            <value key="N12 - SDF Cattolica" value="108"/>
+            <value key="N13 - SDF Diga del Conca" value="109"/>
+            <value key="N14 - SDF Morciano" value="95"/>
+            <value key="N15 - SDF Centrale Cava" value="89"/>
+            <value key="N16 - SDF Poggio Berni" value="90"/>
+            <value key="N17 - SDF Pozzi esterni Rimini" value="92"/>
+            <value key="N18 - SDF Gabicce" value="93"/>
+            <value key="N19 - SDF Misano" value="94"/>
+            <value key="Non definito" value="111"/>
+            <value key="R01 - SDF Ravenna NIP" value="88"/>
+            <value key="R02 - SDF RA Lughese" value="87"/>
+            <value key="R03 - SDF RA C.E.R." value="86"/>
+            <value key="Sublotto 1" value="3"/>
+            <value key="Sublotto 10" value="12"/>
+            <value key="Sublotto 11" value="13"/>
+            <value key="Sublotto 12" value="14"/>
+            <value key="Sublotto 13" value="15"/>
+            <value key="Sublotto 14" value="16"/>
+            <value key="Sublotto 15" value="17"/>
+            <value key="Sublotto 16" value="18"/>
+            <value key="Sublotto 17" value="19"/>
+            <value key="Sublotto 18" value="20"/>
+            <value key="Sublotto 19" value="21"/>
+            <value key="Sublotto 2" value="4"/>
+            <value key="Sublotto 20" value="22"/>
+            <value key="Sublotto 24a" value="200"/>
+            <value key="Sublotto 24b" value="201"/>
+            <value key="Sublotto 24c" value="202"/>
+            <value key="Sublotto 3" value="5"/>
+            <value key="Sublotto 4" value="6"/>
+            <value key="Sublotto 5" value="7"/>
+            <value key="Sublotto 6" value="8"/>
+            <value key="Sublotto 7" value="9"/>
+            <value key="Sublotto 8" value="10"/>
+            <value key="Sublotto 9" value="11"/>
+            <value key="Sublotto Condotta principale" value="2"/>
+            <value key="XADR - Extra AdR" value="1"/>
+            <value key="XCR - Extra Capaccio Ridracoli" value="110"/>
+            <value key="XFC - Extra NF FC" value="31"/>
+            <value key="XRA - Extra NF RA" value="85"/>
+            <value key="XRN - Extra NF RN" value="91"/>
+          </widgetv2config>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="quotaslm">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="id_ambito">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueMap" name="diritti">
+          <widgetv2config fieldEditable="1" constraint="" labelOnTop="0" constraintDescription="" notNull="0">
+            <value key="ROMAGNA ACQUE" value="ROMAGNA ACQUE"/>
+            <value key="TERZI" value="TERZI"/>
+            <value key="[null]" value=""/>
+          </widgetv2config>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="gestione">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="222,83,58,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="DejaVu Sans"/>
+        <property key="labeling/fontItalic" value="true"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="9"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="75"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="3"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Condensed Bold Oblique"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="6"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>gid</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Etichetta"/>
+        <family fieldname="" name="DejaVu Sans"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="DejaVu Sans,9,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="gid" index="0" name=""/>
+        <alias field="id" index="1" name=""/>
+        <alias field="istat_cod" index="2" name=""/>
+        <alias field="comune" index="3" name=""/>
+        <alias field="codvia" index="4" name=""/>
+        <alias field="nomevia" index="5" name=""/>
+        <alias field="ncivsub" index="6" name=""/>
+        <alias field="codprop" index="7" name=""/>
+        <alias field="dsstato" index="8" name=""/>
+        <alias field="codimp" index="9" name=""/>
+        <alias field="capacita" index="10" name=""/>
+        <alias field="ato" index="11" name=""/>
+        <alias field="accuratez" index="12" name=""/>
+        <alias field="nome" index="13" name=""/>
+        <alias field="lastupdate" index="14" name=""/>
+        <alias field="immagine1" index="15" name=""/>
+        <alias field="immagine2" index="16" name=""/>
+        <alias field="sotagg" index="17" name=""/>
+        <alias field="categoria" index="18" name=""/>
+        <alias field="distr" index="19" name=""/>
+        <alias field="tipologia" index="20" name=""/>
+        <alias field="localita" index="21" name=""/>
+        <alias field="sublotto2" index="22" name=""/>
+        <alias field="note" index="23" name=""/>
+        <alias field="id_sublotto" index="24" name=""/>
+        <alias field="quotaslm" index="25" name=""/>
+        <alias field="id_ambito" index="26" name=""/>
+        <alias field="diritti" index="27" name=""/>
+        <alias field="gestione" index="28" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="1175854626">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="gid"/>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="istat_cod"/>
+          <column width="-1" hidden="0" type="field" name="comune"/>
+          <column width="-1" hidden="0" type="field" name="codvia"/>
+          <column width="-1" hidden="0" type="field" name="nomevia"/>
+          <column width="-1" hidden="0" type="field" name="ncivsub"/>
+          <column width="-1" hidden="0" type="field" name="codprop"/>
+          <column width="-1" hidden="0" type="field" name="dsstato"/>
+          <column width="-1" hidden="0" type="field" name="codimp"/>
+          <column width="-1" hidden="0" type="field" name="capacita"/>
+          <column width="-1" hidden="0" type="field" name="ato"/>
+          <column width="-1" hidden="0" type="field" name="accuratez"/>
+          <column width="-1" hidden="0" type="field" name="nome"/>
+          <column width="-1" hidden="0" type="field" name="lastupdate"/>
+          <column width="-1" hidden="0" type="field" name="immagine1"/>
+          <column width="-1" hidden="0" type="field" name="immagine2"/>
+          <column width="-1" hidden="0" type="field" name="sotagg"/>
+          <column width="-1" hidden="0" type="field" name="categoria"/>
+          <column width="-1" hidden="0" type="field" name="distr"/>
+          <column width="-1" hidden="0" type="field" name="tipologia"/>
+          <column width="-1" hidden="0" type="field" name="localita"/>
+          <column width="-1" hidden="0" type="field" name="sublotto2"/>
+          <column width="-1" hidden="0" type="field" name="note"/>
+          <column width="-1" hidden="0" type="field" name="id_sublotto"/>
+          <column width="-1" hidden="0" type="field" name="quotaslm"/>
+          <column width="-1" hidden="0" type="field" name="id_ambito"/>
+          <column width="-1" hidden="0" type="field" name="diritti"/>
+          <column width="-1" hidden="0" type="field" name="gestione"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform>./modulo_nodi.ui</editform>
+      <editforminit>formOpen</editforminit>
+      <editforminitcodesource>2</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[from modulo_nodi import formOpen
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>uifilelayout</editorlayout>
+      <attributeEditorForm>
+        <attributeEditorField showLabel="1" index="10" name="capacita"/>
+        <attributeEditorField showLabel="1" index="13" name="nome"/>
+        <attributeEditorField showLabel="1" index="23" name="note"/>
+      </attributeEditorForm>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="gid" expression=""/>
+        <default field="id" expression=""/>
+        <default field="istat_cod" expression=""/>
+        <default field="comune" expression=""/>
+        <default field="codvia" expression=""/>
+        <default field="nomevia" expression=""/>
+        <default field="ncivsub" expression=""/>
+        <default field="codprop" expression=""/>
+        <default field="dsstato" expression=""/>
+        <default field="codimp" expression=""/>
+        <default field="capacita" expression=""/>
+        <default field="ato" expression=""/>
+        <default field="accuratez" expression=""/>
+        <default field="nome" expression=""/>
+        <default field="lastupdate" expression=""/>
+        <default field="immagine1" expression=""/>
+        <default field="immagine2" expression=""/>
+        <default field="sotagg" expression=""/>
+        <default field="categoria" expression=""/>
+        <default field="distr" expression=""/>
+        <default field="tipologia" expression=""/>
+        <default field="localita" expression=""/>
+        <default field="sublotto2" expression=""/>
+        <default field="note" expression=""/>
+        <default field="id_sublotto" expression=""/>
+        <default field="quotaslm" expression=""/>
+        <default field="id_ambito" expression=""/>
+        <default field="diritti" expression=""/>
+        <default field="gestione" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "gid", '&lt;NULL>' )</previewExpression>
+    </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>744575.0625</xmin>
+        <ymin>4852011</ymin>
+        <xmax>804625.0625</xmax>
+        <ymax>4906833.5</ymax>
+      </extent>
+      <id>ra_tratte_totali20170525104501803</id>
+      <datasource>dbname='webgis' host=localhost port=5432 user='postgres' password='70labgis' sslmode=disable key='gid' srid=32632 type=MultiLineString table="public"."ra_tratte_totali" (geom) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>ra_tratte_totali</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=32 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3116</srsid>
+          <srid>32632</srid>
+          <authid>EPSG:32632</authid>
+          <description>WGS 84 / UTM zone 32N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="gid">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="istat_cod">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="comune">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="anno_posa">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="codprop">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lunghezza">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="materiale">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="diametro">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="tipo_rete">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ato">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="annotaz">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="paviment">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="posatore">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pressione">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="spessore">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="competenza">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="ex_azienda">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="diam_est">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="profondita">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lastupdate">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="qtini">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="qtfin">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="txt">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="dsstato">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sotagg">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="categoria">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="distr">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="demanio">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="layer">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sezione">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="posa">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="nome">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="id_sublotto">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="id_classe">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="sublotto">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="classe_">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="diritti">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="id_oggetto">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="condotta">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="gestione">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="id_condotta">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="0">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="15,69,194,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.26"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>gid</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Etichetta"/>
+        <family fieldname="" name="DejaVu Sans"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="gid" index="0" name=""/>
+        <alias field="id" index="1" name=""/>
+        <alias field="istat_cod" index="2" name=""/>
+        <alias field="comune" index="3" name=""/>
+        <alias field="anno_posa" index="4" name=""/>
+        <alias field="codprop" index="5" name=""/>
+        <alias field="lunghezza" index="6" name=""/>
+        <alias field="materiale" index="7" name=""/>
+        <alias field="diametro" index="8" name=""/>
+        <alias field="tipo_rete" index="9" name=""/>
+        <alias field="ato" index="10" name=""/>
+        <alias field="annotaz" index="11" name=""/>
+        <alias field="paviment" index="12" name=""/>
+        <alias field="posatore" index="13" name=""/>
+        <alias field="pressione" index="14" name=""/>
+        <alias field="spessore" index="15" name=""/>
+        <alias field="competenza" index="16" name=""/>
+        <alias field="ex_azienda" index="17" name=""/>
+        <alias field="diam_est" index="18" name=""/>
+        <alias field="profondita" index="19" name=""/>
+        <alias field="lastupdate" index="20" name=""/>
+        <alias field="qtini" index="21" name=""/>
+        <alias field="qtfin" index="22" name=""/>
+        <alias field="txt" index="23" name=""/>
+        <alias field="dsstato" index="24" name=""/>
+        <alias field="sotagg" index="25" name=""/>
+        <alias field="categoria" index="26" name=""/>
+        <alias field="distr" index="27" name=""/>
+        <alias field="demanio" index="28" name=""/>
+        <alias field="layer" index="29" name=""/>
+        <alias field="sezione" index="30" name=""/>
+        <alias field="posa" index="31" name=""/>
+        <alias field="nome" index="32" name=""/>
+        <alias field="id_sublotto" index="33" name=""/>
+        <alias field="id_classe" index="34" name=""/>
+        <alias field="sublotto" index="35" name=""/>
+        <alias field="classe_" index="36" name=""/>
+        <alias field="diritti" index="37" name=""/>
+        <alias field="id_oggetto" index="38" name=""/>
+        <alias field="condotta" index="39" name=""/>
+        <alias field="gestione" index="40" name=""/>
+        <alias field="id_condotta" index="41" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="974729274">
+        <columns/>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="gid" expression=""/>
+        <default field="id" expression=""/>
+        <default field="istat_cod" expression=""/>
+        <default field="comune" expression=""/>
+        <default field="anno_posa" expression=""/>
+        <default field="codprop" expression=""/>
+        <default field="lunghezza" expression=""/>
+        <default field="materiale" expression=""/>
+        <default field="diametro" expression=""/>
+        <default field="tipo_rete" expression=""/>
+        <default field="ato" expression=""/>
+        <default field="annotaz" expression=""/>
+        <default field="paviment" expression=""/>
+        <default field="posatore" expression=""/>
+        <default field="pressione" expression=""/>
+        <default field="spessore" expression=""/>
+        <default field="competenza" expression=""/>
+        <default field="ex_azienda" expression=""/>
+        <default field="diam_est" expression=""/>
+        <default field="profondita" expression=""/>
+        <default field="lastupdate" expression=""/>
+        <default field="qtini" expression=""/>
+        <default field="qtfin" expression=""/>
+        <default field="txt" expression=""/>
+        <default field="dsstato" expression=""/>
+        <default field="sotagg" expression=""/>
+        <default field="categoria" expression=""/>
+        <default field="distr" expression=""/>
+        <default field="demanio" expression=""/>
+        <default field="layer" expression=""/>
+        <default field="sezione" expression=""/>
+        <default field="posa" expression=""/>
+        <default field="nome" expression=""/>
+        <default field="id_sublotto" expression=""/>
+        <default field="id_classe" expression=""/>
+        <default field="sublotto" expression=""/>
+        <default field="classe_" expression=""/>
+        <default field="diritti" expression=""/>
+        <default field="id_oggetto" expression=""/>
+        <default field="condotta" expression=""/>
+        <default field="gestione" expression=""/>
+        <default field="id_condotta" expression=""/>
+      </defaults>
+      <previewExpression></previewExpression>
+    </maplayer>
+  </projectlayers>
+  <properties>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
+      <ProjectCRSID type="int">3452</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Gui>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <Digitizing>
+      <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <LayerSnappingList type="QStringList">
+        <value>ra_nodi_totali20170525105238638</value>
+        <value>ra_tratte_totali20170525104501803</value>
+      </LayerSnappingList>
+      <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+      </LayerSnappingEnabledList>
+      <SnappingMode type="QString">current_layer</SnappingMode>
+      <AvoidIntersectionsList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList">
+        <value>2</value>
+        <value>2</value>
+      </LayerSnappingToleranceUnitList>
+      <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+      </LayerSnapToList>
+      <DefaultSnapType type="QString">off</DefaultSnapType>
+      <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+      </LayerSnappingToleranceList>
+    </Digitizing>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+    </PositionPrecision>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+  </properties>
+  <visibility-presets/>
+</qgis>
